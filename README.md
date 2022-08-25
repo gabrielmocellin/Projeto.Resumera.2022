@@ -1,4 +1,4 @@
-# Projeto Resumera
+# 📚 Projeto Resumera 📚
 
 ## Sobre o projeto
 
