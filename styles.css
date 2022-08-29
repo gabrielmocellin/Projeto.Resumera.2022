@@ -35,6 +35,10 @@ strong {
     font-weight: 400;
 }
 
+.cabecalho-menu:hover {
+    color: lightblue;
+}
+
 .logo {
     font-family: 'Poppins', sans-serif;
     color: #efefef;
@@ -104,8 +108,8 @@ strong {
 }
 
 .sobrenos-titulo {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    top: 52px;
     align-items: center;
     border-top: 2px solid blue;
     margin-top: 12px;
@@ -163,7 +167,7 @@ strong {
 /* RODAPÉ */
 
 footer {
-    background-color: blue;
+    background-color: rgb(16, 16, 211);
     margin-top: 20px;
     color: white;
 }
