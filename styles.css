@@ -13,13 +13,13 @@ font-family: 'Roboto Slab', serif; */
 }
 
 strong {
-    color: blue;
+    color: #1919e6;
 }
 
 /* CABEÇALHO */
 
 .cabecalho {
-    background-color: blue;
+    background-color: #1919e6;
     display: flex;
     gap: 42px;
     flex-direction: row;
@@ -35,6 +35,10 @@ strong {
     font-weight: 400;
 }
 
+.cabecalho-menu:hover {
+   color: #5F5AA2;
+}
+
 .logo {
     font-family: 'Poppins', sans-serif;
     color: #efefef;
@@ -45,12 +49,12 @@ strong {
 
 .logo-title {
     font-family: 'Poppins', sans-serif;
-    color: blue;
+    color: #0431c4;
     font-size: 35px;
 }
 
 .conteudo {
-    border-top: 2px solid blue;
+    border-top: 2px solid #0431c4;
 }
 
 .conteudo-principal {
@@ -76,7 +80,7 @@ strong {
 
 .botao {
     margin-top: 15px;
-    background-color: blue;
+    background-color: #0431c4;
     color: white;
     width: 160px;
     height: 60px;
@@ -88,7 +92,7 @@ strong {
     font-weight: 400;
 }
 .botao:hover {
-    background-color: rgb(80, 19, 177);
+    background-color: #5013b1;
 }
 
 
@@ -107,7 +111,7 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 2px solid blue;
+    border-top: 2px solid #0431c4;
     margin-top: 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
@@ -132,7 +136,7 @@ strong {
 }
 
 .contatos-titulo {
-    border-top: 2px solid blue;
+    border-top: 2px solid #0431c4;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     margin-right: 250px;
@@ -163,7 +167,7 @@ strong {
 /* RODAPÉ */
 
 footer {
-    background-color: blue;
+    background-color: #1919e6;
     margin-top: 20px;
     color: white;
 }
@@ -177,11 +181,16 @@ footer {
 
 .rodape-contain {
     display: flex;
-    gap: 42px;
+    gap: 2%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: white;
 }
 
 .rodape-nav {
@@ -189,11 +198,16 @@ footer {
     align-items: center;
     text-align: center;
     margin-top: 10px;
+    
 }
 
 .rodape-sub {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
     text-align: center;
     border-top: 1px solid white;
+}
+
+.rodape-contain:hover {
+    color: blue;
 }
