@@ -4,14 +4,45 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Cadastro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="cadastroStyles.css">
     </head>
     <body>
         
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <h1 class="logo">Resumera</h1>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu" href="#sobrenos">Sobre Nós</a>
+            <a class="cabecalho-menu" href="#contatos">Contatos</a>
+            <a class="cabecalho-menu" href="#">Premium</a>
+            <a class="cabecalho-menu" href="login.html">Login</a>
+        </nav>
+    </header>
+    <main id="content">
+        <div>
+            <h1 class="titulo">Cadastro</h1>
+        </div>
+        <form id="form">
+            <div class="div-input">
+                <label>Email</label>
+                <input id="input-email" class="input-box" type="text">
+            </div>
+            <div class="div-input">
+                <label>Password</label>
+                <input id="input-password" class="input-box" type="password">
+            </div>
+            <div class="div-input">
+                <label>Confirm Password</label>
+                <input id="input-confirm" class="input-box" type="password">
+            </div>
+            <input type="button" value = "Entrar" id="submit-button" name="submit-button" onclick="register()">
+        </form>
+    </main>
         
-        <script src="" async defer></script>
+        
+        <script language = "JavaScript" src="cadastroJavaScript.js" async defer></script>
     </body>
 </html>
