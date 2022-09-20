@@ -10,14 +10,9 @@
     padding: 1%;
 }
 
-img {
-    border-radius: 80%;
-    width: 40%;
-}
-
-button {
-    width: 20%;
-    
+#img-profile {
+    border-radius: 50%;
+    width: 70%;
 }
 
 .section-principal {
@@ -25,16 +20,28 @@ button {
     flex-direction: row;
 }
 
+
 .profile-content {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    align-items: center;
+    padding: 3%;
     width: 20%;
     border: 1px solid black;
 }
 
 .content-principal {
-    width: 60%;
+    width: 80%;
+    text-align: center;
     border: 1px solid black;
     display: flex;
+    padding: 5%;
+}
+
+.text-principal {
+    padding: 2px;
+}
+
+#myresumos {
+    text-align: center;
 }
