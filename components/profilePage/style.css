@@ -1,25 +1,59 @@
+/*---------------------------------------- CONFIG DA PÁGINA---------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap'); /* Roboto e Poppins */
+/* 
+font-family: 'Poppins', sans-serif; // Logo
+font-family: 'Roboto', sans-serif; // Sistema
+*/
 * {
     padding: 0px;
     margin: 0px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------------- HEADER ---------------------------------------- */
 .container {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: #0c51cf;
     padding: 1%;
+    gap: 2%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#img-profile {
-    border-radius: 50%;
-    width: 70%;
+.logo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6px;
 }
+
+/* .container-input {
+    background-color: lightgray;
+    border-radius: 20px;
+    width: 20%;
+} */
+
+nav {
+    color: white;
+    text-align: center;
+}
+
+.container-link {
+    text-decoration: none;
+    color: white;
+}
+
+/*---------------------------------------- CONTEÚDO ---------------------------------------- */
 
 .section-principal {
     display: flex;
     flex-direction: row;
 }
 
+/* INFORMAÇÕES DO USUÁRIO (FOTO/NOME/USUÁRIO) */
 
 .profile-content {
     display: flex;
@@ -30,11 +64,18 @@
     border: 1px solid black;
 }
 
+#img-profile {
+    border-radius: 50%;
+    width: 70%;
+}
+
+/* CONTEUDO PRINCIPAL DA PÁGINA (RESUMOS) */
+
 .content-principal {
-    width: 80%;
-    text-align: center;
-    border: 1px solid black;
     display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid black;
     padding: 5%;
 }
 
@@ -42,6 +83,25 @@
     padding: 2px;
 }
 
-#myresumos {
+#resumos-title {
     text-align: center;
+}
+
+/* Meus resumos favoritos */
+
+.resumos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.resumo-fav {
+    padding: 5%;
+    border: 2px solid lightgray;
+    border-radius: 2%;
+    margin-left: 5%;
+}
+
+.resumo-fav:hover {
+    border: 2px solid gray;
 }
