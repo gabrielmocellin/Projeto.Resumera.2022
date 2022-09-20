@@ -22,23 +22,33 @@
         </nav>
     </header>
     <main id="content">
+
         <div>
             <h1 class="titulo">Cadastro</h1>
         </div>
+
         <form id="form">
+
             <div class="div-input">
                 <label>Email</label>
-                <input id="input-email" class="input-box" type="text">
+                <input id="input-email" class="input-box" type="text" placeholder="Digite aqui seu email...">
+                <img style="visibility:hidden;" id="check-img-email" src="" class="form-icon">
             </div>
+
             <div class="div-input">
                 <label>Password</label>
-                <input id="input-password" class="input-box" type="password">
+                <input id="input-password" class="input-box" type="password" placeholder="Digite aqui sua senha...">
+                <img style="visibility:hidden;" id="check-img-password" src="" class="form-icon">
             </div>
+
             <div class="div-input">
                 <label>Confirm Password</label>
-                <input id="input-confirm" class="input-box" type="password">
+                <input id="input-confirm" class="input-box" type="password" placeholder="Digite novamente sua senha...">
+                <img style="visibility:hidden;" id="check-img-confirm" src="" class="form-icon">
             </div>
+
             <input type="button" value = "Entrar" id="submit-button" name="submit-button" onclick="register()">
+
         </form>
     </main>
         

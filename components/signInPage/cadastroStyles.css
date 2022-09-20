@@ -57,12 +57,12 @@ strong {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width:100vw;
-    height:100vh;    
+    width:98vw;
+    height:96vh;    
 }
 
 #content .titulo {
-    font-family: 'Poppins', sans-serif; font-size:35px; font-weight: bold;
+    font-family: 'Poppins', sans-serif; font-size:45px; font-weight: bold;
     color: rgb(33, 81, 255);
 }
 
@@ -73,7 +73,7 @@ strong {
     align-items: center;
     display:flex;
     padding:40px;
-    background-color:#f0f4ff;
+    background-color:rgb(211, 239, 249);
     height:70vh;
     width:40%;
     box-shadow: 3px 3px 3px rgb(50, 50, 50);
@@ -81,8 +81,11 @@ strong {
 }
 
 #form label {
-    font-weight: bold;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-icon {
+    width: 48px; height: 48px;
 }
 
 .div-input {
@@ -94,10 +97,19 @@ strong {
 }
 
 .div-input .input-box {
+    padding: 0 0 0 16px;
+    font-size:16px;
     border: none;
     border-bottom: 1px solid #0c51cf;
+    border-radius:5px;
     height:48px;
     width:100%;
+    background-color:#f0f4ff;
+}
+
+.div-input .input-box:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 #submit-button {
@@ -105,7 +117,7 @@ strong {
     border-radius:50px;
     font-family: 'Poppins', sans-serif;
     background-color:#0c51cf;
-    width:40%; height:35px;
+    width:25%; height:35px;
     font-size:25px;
     color:white;
 }
