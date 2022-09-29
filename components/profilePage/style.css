@@ -11,30 +11,33 @@ font-family: 'Roboto', sans-serif; // Sistema
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right,#5981ca, rgb(131, 149, 209));
 }
 
 /*---------------------------------------- HEADER ---------------------------------------- */
 .container {
-    display: flex;
-    flex-direction: row;
     background-color: #0c51cf;
-    padding: 1%;
-    gap: 2%;
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.container-cabecalho{
+    display: flex;
+    gap: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .logo {
-    color: white;
     font-family: 'Poppins', sans-serif;
-    margin-left: 6px;
+    color: #efefef;
+    width: 110px;
 }
 
-/* .container-input {
-    background-color: lightgray;
-    border-radius: 20px;
-    width: 20%;
-} */
 
 nav {
     color: white;
@@ -44,6 +47,7 @@ nav {
 .container-link {
     text-decoration: none;
     color: white;
+    
 }
 
 /*---------------------------------------- CONTEÚDO ---------------------------------------- */
@@ -51,6 +55,7 @@ nav {
 .section-principal {
     display: flex;
     flex-direction: row;
+    margin-top: 5%;
 }
 
 /* INFORMAÇÕES DO USUÁRIO (FOTO/NOME/USUÁRIO) */
@@ -62,6 +67,11 @@ nav {
     padding: 3%;
     width: 20%;
     border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f7f0f0;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 2px 2px#6d99ec;
 }
 
 #img-profile {
@@ -69,14 +79,28 @@ nav {
     width: 70%;
 }
 
+.editprofile {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    height: 8%;
+    border-radius: 7px;
+    background-color: #0c51cf;
+    color: white;
+}
+
 /* CONTEUDO PRINCIPAL DA PÁGINA (RESUMOS) */
 
 .content-principal {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     border: 1px solid black;
     padding: 5%;
+    background-color: #f7f0f0;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px 2px#6d99ec;
 }
 
 .text-principal {
