@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroStyles.css">
+    <title>Registrar-se | Resumera</title>
+</head>
+<body onload="setTimeout(trocar_logo, 5000)">
+    <div id="container">
+
+        <div id="div-esquerda">
+            <img id = "img-logo" src="midia/ResumeraLogoGif.gif">
+        </div>
+
+        <div id="div-direita">
+            <h3>Cadastro</h3>
+            <form id="form-register" name="form-register" method="POST">
+                
+                
+                <label id="labelNome">Nome:</label>
+                <input id="input-nome-telefone" class="input" type="text" placeholder="Digite seu nome">
+
+                <label class="labelInput">E-mail:</label>
+                <input id="input-email" class="input" type="text" placeholder="Digite o seu E-mail..."/>
+
+                <label class="labelInput">Senha:</label>
+                <input id="input-senha" class="input" type="password" placeholder="Digite a sua senha..."/>
+
+                <label class="labelInput">Confirme sua senha:</label>
+                <input id="input-confirmar" class="input" type="password" placeholder="Digite de novo a sua senha..."/>
+
+                <input id="input-prosseguir" type="button" value="Prosseguir" onclick="register()">
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<script language="JavaScript" src="cadastroJavaScript.js"></script>
+</html>
