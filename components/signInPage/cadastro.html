@@ -8,8 +8,8 @@
     <title>Registrar-se | Resumera</title>
 </head>
 <body onload="setTimeout(trocar_logo, 5000)">
-    <div id="container">
 
+    <div id="container">
         <div id="div-esquerda">
             <img id = "img-logo" src="midia/ResumeraLogoGif.gif">
         </div>
@@ -18,23 +18,26 @@
             <h3>Cadastro</h3>
             <form id="form-register" name="form-register" method="POST">
                 
-                
+                <!-- Nome -->
                 <label id="labelNome">Nome:</label>
                 <input id="input-nome-telefone" class="input" type="text" placeholder="Digite seu nome">
 
+                <!-- E-Mail -->
                 <label class="labelInput">E-mail:</label>
                 <input id="input-email" class="input" type="text" placeholder="Digite o seu E-mail..."/>
 
+                <!-- Senha -->
                 <label class="labelInput">Senha:</label>
                 <input id="input-senha" class="input" type="password" placeholder="Digite a sua senha..."/>
 
+                <!-- Confirmar Senha -->
                 <label class="labelInput">Confirme sua senha:</label>
                 <input id="input-confirmar" class="input" type="password" placeholder="Digite de novo a sua senha..."/>
-
+                
+                <!-- Botão -->
                 <input id="input-prosseguir" type="button" value="Prosseguir" onclick="register()">
                 
             </form>
-
         </div>
     </div>
 </body>
