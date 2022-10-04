@@ -1,123 +1,305 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* 
 font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Slab', serif; 
-font-family: 'Nunito Sans', sans-serif; 
-font-family: 'Comfortaa', cursive;
+font-family: 'Roboto', sans-serif; 
 */
 
+
+
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
-strong {
-    color: #0c51cf;
-}
-
-/* CABEÇALHO */
-
-.cabecalho {
-    background-color: #0c51cf;
-    display: flex;
-    gap: 42px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.cabecalho-menu{
-    display: flex;
-    gap: 50px;
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-}
-
-.cabecalho nav a:hover {
-   text-decoration: underline;
-}
-
-.logo {
-    font-family: 'Poppins', sans-serif;
-    color: #efefef;
-    width: 110px;
-}
-
-/* CONTEUDO */
-
-#content {
+body{
+    width:100vw; height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    width:98vw;
-    height:96vh;    
+    background-image: linear-gradient(rgb(4, 159, 255), rgb(0, 204, 255));
 }
 
-#content .titulo {
-    font-family: 'Poppins', sans-serif; font-size:45px; font-weight: bold;
-    color: rgb(33, 81, 255);
+#container{
+    display:flex;
+    flex-direction: row;
+    background-color: #efefef;
+    width: 60%;
+    height: 60%;
 }
 
-#form {
-    font-size:26px;
+#div-esquerda{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #105ac9;
+    width:55%;
+    height: 100%;
+}
+
+#div-esquerda img{
+    width:80%;
+    height:80%;
+}
+
+#div-direita{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    width:45%;
+    height:100%;
+}
+
+#div-direita h3{
+    display:flex;
+    height:10%; width:100%;
+    align-items: center; justify-content: center;
+}
+
+#div-direita form{
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display:flex;
-    padding:40px;
-    background-color:rgb(211, 239, 249);
-    height:70vh;
-    width:40%;
-    box-shadow: 3px 3px 3px rgb(50, 50, 50);
-    border: solid; border-width: 2px; border-radius: 25px;
-}
-
-#form label {
-    font-family: 'Poppins', sans-serif;
-}
-
-.form-icon {
-    width: 48px; height: 48px;
-}
-
-.div-input {
-    display:flex;
-    margin-bottom:30px;
-    width:80%;
-    flex-direction:column;
-    justify-content:center;
-}
-
-.div-input .input-box {
-    padding: 0 0 0 16px;
-    font-size:16px;
-    border: none;
-    border-bottom: 1px solid #0c51cf;
-    border-radius:5px;
-    height:48px;
+    height:90%;
     width:100%;
-    background-color:#f0f4ff;
 }
 
-.div-input .input-box:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-
-#submit-button {
-    border:none;
-    border-radius:50px;
+#div-direita form label{
     font-family: 'Poppins', sans-serif;
-    background-color:#0c51cf;
-    width:25%; height:35px;
-    font-size:25px;
-    color:white;
+    font-size:24px;
+    font-weight: bold;
+}
+
+#div-direita form .input{
+    padding: 0 0 0 15px;
+    margin: 0 0 25px 0;
+    width: 80%;
+    height:36px;
+    outline:none;
+    border:none;
+}
+
+#div-direita form .input:focus{
+    border-bottom: 2px solid #105ac9
+}
+
+#div-direita #input-prosseguir{
+    width:25%;
+    height:10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#efefef;
+    border-radius:15px;
+    font-size:16px;
+    border: 2px solid black;
+    background-color: #105ac9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1001px) {
+    * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    body{
+        width:100vw; height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgb(4, 159, 255), rgb(0, 204, 255));
+    }
+    
+    #container{
+        display:flex;
+        flex-direction: row;
+        background-color: #efefef;
+        width: 60%;
+        height: 60%;
+    }
+    
+    #div-esquerda{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #105ac9;
+        width:55%;
+        height: 100%;
+    }
+    
+    #div-esquerda img{
+        width:80%;
+        height:80%;
+    }
+    
+    #div-direita{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;;
+        width:45%;
+        height:100%;
+    }
+    
+    #div-direita h3{
+        display:flex;
+        height:10%; width:100%;
+        align-items: center; justify-content: center;
+    }
+    
+    #div-direita form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:90%;
+        width:100%;
+    }
+    
+    #div-direita form label{
+        font-family: 'Poppins', sans-serif;
+        font-size:24px;
+        font-weight: bold;
+    }
+    
+    #div-direita form .input{
+        padding: 0 0 0 15px;
+        margin: 0 0 25px 0;
+        width: 80%;
+        height:36px;
+        outline:none;
+        border:none;
+    }
+    
+    #div-direita form .input:focus{
+        border-bottom: 2px solid #105ac9
+    }
+    
+    #div-direita #input-prosseguir{
+        width:25%;
+        height:10%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color:#efefef;
+        border-radius:15px;
+        font-size:16px;
+        border: 2px solid black;
+        background-color: #105ac9;
+    }
+}
+
+
+@media (max-width:1000px) {
+    * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    body{
+        width:100vw; height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgb(4, 159, 255), rgb(0, 204, 255));
+    }
+    
+    #container{
+        display:flex;
+        flex-direction: row;
+        background-color: #efefef;
+        width: 80%;
+        height: 60%;
+    }
+    
+    #div-esquerda{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #105ac9;
+        width:55%;
+        height: 100%;
+    }
+    
+    #div-esquerda img{
+        width:80%;
+        height:80%;
+    }
+    
+    #div-direita{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;;
+        width:45%;
+        height:100%;
+    }
+    
+    #div-direita h3{
+        display:flex;
+        height:10%; width:100%;
+        align-items: center; justify-content: center;
+    }
+    
+    #div-direita form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:90%;
+        width:100%;
+    }
+    
+    #div-direita form label{
+        font-family: 'Poppins', sans-serif;
+        font-size:24px;
+        font-weight: bold;
+    }
+    
+    #div-direita form .input{
+        padding: 0 0 0 15px;
+        margin: 0 0 25px 0;
+        width: 80%;
+        height:36px;
+        outline:none;
+        border:none;
+    }
+    
+    #div-direita form .input:focus{
+        border-bottom: 2px solid #105ac9
+    }
+    
+    #div-direita #input-prosseguir{
+        width:50%;
+        height:10%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color:#efefef;
+        border-radius:15px;
+        font-size:16px;
+        border: 2px solid black;
+        background-color: #105ac9;
+    }
+}
+
+@media (max-width:890px) {
+    #div-direita form label{
+        font-family: 'Poppins', sans-serif;
+        font-size:16px;
+        font-weight: bold;
+    }
 }
