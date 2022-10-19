@@ -1,92 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-<<<<<<< Updated upstream
-    <link rel="stylesheet" href="styles_login.css">
-    <link rel="icon" href="midia/merinha2.png">
-    <title>Resumera | Login</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="midia/R.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Login | Resumera</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
 
-    <header class="cabecalho">
-        <h1 class="logo">Resumera</h1>
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu" href="../landingPage/index.html">Sobre Nós</a>
-            <a class="cabecalho-menu" href="../landingPage/index.html">Contatos</a>
-            <p class="cabecalho-menu">Premium</p>
-            <p class="cabecalho-menu">Login</p>
-        </nav>
-    </header>
+                <div id="div-esquerda">
 
-    <main>
-        <h1>Login</h1>
-        <section id="section_form_cadastro">
-            <form id="form_cadastro" name="form_cadastro">
-                <div id="div_username" name="div_username">
-                    <section class="s1">
-                        <label>Username:</label>
-                    </section>
+                    <h3>Login</h3>
 
-                    <section class="s2">
-                        <input id="input_username" name="input_username" type="text">
-                    </section>
+                    <form action="" method="post">
+                        <label for="">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail...">
+                        <label for="">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha...">
+                        <input type="submit" value="Logar">
+                    </form>
+
+                    <p>Ainda não possui uma conta no <strong>Resumera?</strong> <br> <a href="signInPage/cadastro.html">Criar uma conta</a></p>
                 </div>
-                <div id="div_password" name="div_password">
-                    <section class="s1">
-                        <label>Password:</label>
-                    </section>
-                    <section class="s2">
-                        <input id="input_password" name="input_password" type="password">
-                    </section>
+
+                
+                <div id="div-direita">
+                    <img id="img-logo" src="midia/ResumeraLogo3 (1).gif">
                 </div>
-                <div id="div_buttonsubmit" name="div_buttonsubmit" onclick="logar()">
-                    <a id="buttonsubmit" name="buttonsubmit">Entrar</a>
-                </div>
-                <hr class="hr_forte">
-                <div id="div_h2_cadastro">
-                    <h2><a href="cadastro.html">Criar nova conta</a></h2>
-                </div>
-            </form>
-        </section>
-    </main>
-    
 
-    <script language="JavaScript" src="script_login.js"></script>
-=======
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="midia/R.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Login | Resumera</title>
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-
-            <div id="div-esquerda">
-
-                <h3>Login</h3>
-
-                <form action="POST">
-                    <label for="">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail...">
-                    <label for="">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha...">
-                    <input type="submit" value="Logar">
-                </form>
-
-                <p>Ainda não possui uma conta no <strong>Resumera?</strong> <a href="signInPage/cadastro.html">Criar uma conta</a></p>
             </div>
-
-            
-            <div id="div-direita">
-                <img id="img-logo" src="midia/ResumeraLogo3 (1).gif">
-            </div>
-
         </div>
-    </div>
-        
->>>>>>> Stashed changes
-</body>
+            
+    </body>
 </html>
