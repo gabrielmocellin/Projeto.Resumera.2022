@@ -47,6 +47,7 @@
                 <!-- Botão -->
                 <input id= "input-cadastrar" type="button" value="Cadastrar" onclick="register_second_part()">
                 
+                
             </form>
         </div>
     </div>

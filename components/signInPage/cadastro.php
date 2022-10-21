@@ -34,6 +34,7 @@
                 <!-- Botão -->
                 <input id= "input-prosseguir" type="button" value="Prosseguir" onclick="register_first_part()">
                 
+                
             </form>
         </div>
     </div>
