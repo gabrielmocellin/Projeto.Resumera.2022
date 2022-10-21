@@ -1,0 +1,131 @@
+/*---------------------------------------- CONFIG DA PÁGINA---------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap'); /* Roboto e Poppins */
+/* 
+font-family: 'Poppins', sans-serif; // Logo
+font-family: 'Roboto', sans-serif; // Sistema
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right,#5981ca, rgb(131, 149, 209));
+}
+
+/*---------------------------------------- HEADER ---------------------------------------- */
+.container {
+    background-color: #0c51cf;
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-cabecalho{
+    display: flex;
+    gap: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: #efefef;
+    width: 110px;
+}
+
+
+nav {
+    color: white;
+    text-align: center;
+}
+
+.container-link {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*---------------------------------------- CONTEÚDO ---------------------------------------- */
+
+.section-principal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+/* INFORMAÇÕES DO USUÁRIO (FOTO/NOME/USUÁRIO) */
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f7f0f0;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 2px 2px#6d99ec;
+}
+
+#img-profile {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.editprofile {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    height: 8%;
+    border-radius: 7px;
+    background-color: #0c51cf;
+    color: white;
+}
+
+/* CONTEUDO PRINCIPAL DA PÁGINA (RESUMOS) */
+
+.content-principal {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 1px solid black;
+    padding: 5%;
+    background-color: #f7f0f0;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px 2px#6d99ec;
+}
+
+.text-principal {
+    padding: 2px;
+}
+
+#resumos-title {
+    text-align: center;
+}
+
+/* Meus resumos favoritos */
+
+.resumos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.resumo-fav {
+    padding: 5%;
+    border: 2px solid lightgray;
+    border-radius: 2%;
+    margin-left: 5%;
+}
+
+.resumo-fav:hover {
+    border: 2px solid gray;
+}

@@ -1,115 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* 
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
-
-
-
-* {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-body{
-    width:100vw; height:100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgb(4, 159, 255), rgb(0, 204, 255));
-}
-
-#container{
-    display:flex;
-    flex-direction: row;
-    background-color: #efefef;
-    width: 60%;
-    height: 60%;
-}
-
-#div-esquerda{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #105ac9;
-    width:55%;
-    height: 100%;
-}
-
-#div-esquerda img{
-    width:80%;
-    height:80%;
-}
-
-#div-direita{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;;
-    width:45%;
-    height:100%;
-}
-
-#div-direita h3{
-    display:flex;
-    height:10%; width:100%;
-    align-items: center; justify-content: center;
-}
-
-#div-direita form{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:90%;
-    width:100%;
-}
-
-#div-direita form label{
-    font-family: 'Poppins', sans-serif;
-    font-size:24px;
-    font-weight: bold;
-}
-
-#div-direita form .input{
-    padding: 0 0 0 15px;
-    margin: 0 0 25px 0;
-    width: 80%;
-    height:36px;
-    outline:none;
-    border:none;
-}
-
-#div-direita form .input:focus{
-    border-bottom: 2px solid #105ac9
-}
-
-#div-direita #input-prosseguir{
-    width:25%;
-    height:10%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color:#efefef;
-    border-radius:15px;
-    font-size:16px;
-    border: 2px solid black;
-    background-color: #105ac9;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width:1001px) {
     * {
@@ -131,23 +26,26 @@ body{
         background-color: #efefef;
         width: 60%;
         height: 60%;
+        border-radius: 10px;
     }
     
-    #div-esquerda{
+    #esquerda_div{
         display:flex;
         justify-content: center;
         align-items: center;
         background-color: #105ac9;
         width:55%;
         height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
     
-    #div-esquerda img{
+    #logo_img{
         width:80%;
         height:80%;
     }
     
-    #div-direita{
+    #direita_div{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -156,13 +54,16 @@ body{
         height:100%;
     }
     
-    #div-direita h3{
+    #form-register{
         display:flex;
-        height:10%; width:100%;
-        align-items: center; justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:90%;
+        width:100%;
     }
-    
-    #div-direita form{
+
+    #form-register2{
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -171,32 +72,46 @@ body{
         width:100%;
     }
     
-    #div-direita form label{
+    .form_label{
         font-family: 'Poppins', sans-serif;
         font-size:24px;
         font-weight: bold;
     }
     
-    #div-direita form .input{
+    .form_input{
         padding: 0 0 0 15px;
         margin: 0 0 25px 0;
         width: 80%;
-        height:36px;
+        height: 36px;
         outline:none;
         border:none;
     }
     
-    #div-direita form .input:focus{
+    .form_input:focus{
         border-bottom: 2px solid #105ac9
     }
     
-    #div-direita #input-prosseguir{
-        width:25%;
+    /* ##### cadastro.php #####*/
+    #input-prosseguir{
+        width:40%;
         height:10%;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
         color:#efefef;
-        border-radius:15px;
+        border-radius:14px;
+        font-size:16px;
+        border: 2px solid black;
+        background-color: #105ac9;
+    }
+
+    /* ##### cadastro2.php #####*/
+    #input-cadastrar{
+        width:40%;
+        height:10%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color:#efefef;
+        border-radius:14px;
         font-size:16px;
         border: 2px solid black;
         background-color: #105ac9;
@@ -226,7 +141,7 @@ body{
         height: 60%;
     }
     
-    #div-esquerda{
+    #esquerda_div{
         display:flex;
         justify-content: center;
         align-items: center;
@@ -235,12 +150,12 @@ body{
         height: 100%;
     }
     
-    #div-esquerda img{
+    #esquerda_div img{
         width:80%;
         height:80%;
     }
     
-    #div-direita{
+    #direita_div{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -249,13 +164,8 @@ body{
         height:100%;
     }
     
-    #div-direita h3{
-        display:flex;
-        height:10%; width:100%;
-        align-items: center; justify-content: center;
-    }
     
-    #div-direita form{
+    #form-register2{
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -264,13 +174,13 @@ body{
         width:100%;
     }
     
-    #div-direita form label{
+    #direita_div form label{
         font-family: 'Poppins', sans-serif;
         font-size:24px;
         font-weight: bold;
     }
     
-    #div-direita form .input{
+    .form_input{
         padding: 0 0 0 15px;
         margin: 0 0 25px 0;
         width: 80%;
@@ -279,12 +189,26 @@ body{
         border:none;
     }
     
-    #div-direita form .input:focus{
+    .form_input:focus{
         border-bottom: 2px solid #105ac9
     }
     
-    #div-direita #input-prosseguir{
-        width:50%;
+    /* ##### cadastro.php #####*/
+    #input-prosseguir{
+        width:40%;
+        height:10%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color:#efefef;
+        border-radius:15px;
+        font-size:16px;
+        border: 2px solid black;
+        background-color: #105ac9;
+    }
+
+    /* ##### cadastro2.php #####*/
+    #input-cadastrar{
+        width:40%;
         height:10%;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
@@ -297,7 +221,17 @@ body{
 }
 
 @media (max-width:890px) {
-    #div-direita form label{
+
+    .form_input{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        width: 80%;
+        height:36px;
+        outline:none;
+        border:none;
+    }
+
+    .form_label{
         font-family: 'Poppins', sans-serif;
         font-size:16px;
         font-weight: bold;
